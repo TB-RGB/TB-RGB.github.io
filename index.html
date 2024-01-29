@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tristan's Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/hydra-synth"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Tristan Bridges</h1>
+        <p>Creative Coder trying to complete an application</p>
+    </div>
+
+    <div class="job-head">
+        <h3>Previous Work & Experience</h3>
+    </div>
+
+    <div>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="edu-head">
+        <h3>Education</h3>
+    </div>
+
+    <div>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="ac-head">
+        <h3>Accolades</h3>
+    </div>
+
+    <div>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="hob-head">
+        <h3>Hobbies & Interest</h3>
+    </div>
+
+    <div class="hob-list">
+        <h1>Making artwork via hydra-synth.js</h1>
+        <canvas id="myCanvas" width="1400px" height="400px"></canvas>
+        <!-- <canvas id="myCanvas2" width="1400px" height="400px"></canvas> -->
+        <h2>ctrl+F5 to see a different output!</h2>
+        <iframe src="https://miscible.vercel.app/" style="border: none;" width="1400px" height="400px"></iframe>
+    </div>
+
+    <div class="p5-list">
+        <h3>P5.js</h3>
+        <!-- <iframe src="https://mutually-assured-generation.vercel.app" width="1400px" height="400px"></iframe> -->
+        <h4>Click !vibe to start the animation, gn to pause, pull rug to reset and randomize</h4>
+        <h5>press right-click to save yourself a png of the output</h5>
+        <iframe src="https://erosionv2.vercel.app" width="1000px" height="800px"></iframe>
+    </div>
+
+
+        <script>
+            var hydra = new Hydra({
+                canvas: document.getElementById("myCanvas"),
+                detectAudio: false
+            })
+            osc(100, 0.01, 2.13)
+                .rotate(0, 0.1)
+                .mult(osc(10, 0.1)
+                    .modulateScale(osc(10)
+                        .rotate(0, -0.101), 1))
+                .diff(noise(0.4))
+                .color(.38, 0.21, 0.29)
+                .modulateKaleid(osc(1.5)
+                    .modulate(voronoi(1.0)
+                        .modulateScale(shape(3.4))))
+                .colorama(0.03)
+                .modulateScale(noise(0.73).diff(voronoi(0.5).modulatePixelate(osc(10))))
+                .out(o0)
+
+            speed = 1
+        </script>
+
+        <!-- <script>
+        var hydra = new Hydra({
+            canvas: document.getElementById("myCanvas2"),
+            detectAudio: false
+        })
+        osc(30, 0.01, 1.8)
+            .color(1.24, 0.4, -11)
+            .rotate(0.30, 0.1)
+            .pixelate(3, 11.573)
+            .modulate(noise(-1.5).diff(o0).scale(.996), () => .5 * Math.sin(0.3 * time))
+            .modulateScale(shape(6, 0.2).modulateRotate(osc(6)))
+            .out(o0);
+    </script> -->
+</body>
+
+</html>
