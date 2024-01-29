@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color:black;
+    color:cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10% 20%;
+}
+
+.job-head {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px dashed red;
+    border-bottom: 1px dashed red;
+}
+
+.edu-head {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px dashed green;
+    border-bottom: 1px dashed green;
+}
+
+.ac-head {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px dashed blue;
+    border-bottom: 1px dashed blue;
+}
+
+.hob-head {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px dashed plum;
+    border-bottom: 1px dashed plum;
+}
+
+.hob-list {
+    font-size: small;
+}
+
+.p5-list {
+    font-size: medium;
+}
