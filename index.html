@@ -19,32 +19,38 @@
         <h3>Previous Work & Experience</h3>
     </div>
 
-    <div>
-        <h4></h4>
-        <h5></h5>
-        <h6></h6>
+    <div class="job-list-1">
+        <h4>St. Paul Bagelry & The Groveland Tap</h4>
+        <h5>Oct 2022 - Present</h5>
+        <h6>Lead Closer & Expo</h6>
 
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+
+        <p>Continued learning of team leadership and collaboration</p>
+        <p>Developed a healthy understanding of work ethic and work/life balance</p>
+
+    </div>
+
+    <div class="job-list-2">
+        <h4>Yeo Lab</h4>
+        <h5>Oct 2018 - November 2021</h5>
+        <h6>Research & Lab Assistant</h6>
+
+        <p>Assisted in the development of a cortical organoid model of myotonic dystrophy</p>
+        <p>Instilled strong passion for and enjoyment of collaborative workspaces</p>
+        <p>Developed strong habits of time management and organization</p>
     </div>
 
     <div class="edu-head">
         <h3>Education</h3>
     </div>
 
-    <div>
-        <h4></h4>
-        <h5></h5>
-        <h6></h6>
+    <div class="edu-list">
+        <h4>San Diego Community College</h4>
+        <h5>Spring 2017 - Fall 2020</h5>
+        <h6>General Biology</h6>
 
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <p>Fostered my love for research</p>
+        <p>Helped organize and participate in study groups with other students</p>
     </div>
 
     <div class="ac-head">
@@ -52,14 +58,12 @@
     </div>
 
     <div>
-        <h4></h4>
-        <h5></h5>
-        <h6></h6>
-
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>IRACDA SURF Summer 2018 Fellowship Recipient</li>
+            <li>Awarded Travel Scholarship and Presentation at SACNAS 2018</li>
+            <li>Cited author on Kathryn H. Morelli et al. ,MECP2-related pathways are dysregulated in a cortical
+                organoid model of myotonic dystrophy.Sci. Transl. Med.14,eabn2375(2022).DOI:<a
+                    href="https://doi.org/10.1126/scitranslmed.abn2375">10.1126/scitranslmed.abn2375</a> </li>
         </ul>
     </div>
 
@@ -84,29 +88,29 @@
     </div>
 
 
-        <script>
-            var hydra = new Hydra({
-                canvas: document.getElementById("myCanvas"),
-                detectAudio: false
-            })
-            osc(100, 0.01, 2.13)
-                .rotate(0, 0.1)
-                .mult(osc(10, 0.1)
-                    .modulateScale(osc(10)
-                        .rotate(0, -0.101), 1))
-                .diff(noise(0.4))
-                .color(.38, 0.21, 0.29)
-                .modulateKaleid(osc(1.5)
-                    .modulate(voronoi(1.0)
-                        .modulateScale(shape(3.4))))
-                .colorama(0.03)
-                .modulateScale(noise(0.73).diff(voronoi(0.5).modulatePixelate(osc(10))))
-                .out(o0)
+    <script>
+        var hydra = new Hydra({
+            canvas: document.getElementById("myCanvas"),
+            detectAudio: false
+        })
+        osc(100, 0.01, 2.13)
+            .rotate(0, 0.1)
+            .mult(osc(10, 0.1)
+                .modulateScale(osc(10)
+                    .rotate(0, -0.101), 1))
+            .diff(noise(0.4))
+            .color(.38, 0.21, 0.29)
+            .modulateKaleid(osc(1.5)
+                .modulate(voronoi(1.0)
+                    .modulateScale(shape(3.4))))
+            .colorama(0.03)
+            .modulateScale(noise(0.73).diff(voronoi(0.5).modulatePixelate(osc(10))))
+            .out(o0)
 
-            speed = 1
-        </script>
+        speed = 1
+    </script>
 
-        <!-- <script>
+    <!-- <script>
         var hydra = new Hydra({
             canvas: document.getElementById("myCanvas2"),
             detectAudio: false
