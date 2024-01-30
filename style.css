@@ -53,3 +53,8 @@ body {
 .edu-list {
     font-size: large;
 }
+
+.myCanvas {
+    margin: 0 auto;
+    display: block;
+}
