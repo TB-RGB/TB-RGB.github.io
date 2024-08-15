@@ -167,7 +167,7 @@
     <script>
         var hydra = new Hydra({
             canvas: document.getElementById("myCanvas2"),
-            detectAudio: true
+            detectAudio: false
         })
         src(o0)
             .scale(1.01)
@@ -179,7 +179,7 @@
                     .pixelate(20, 20),
                 () => a.fft[0]
             )
-            .modulateScale(noise(0.08), () => a.fft[3])
+            .modulateScale(noise(0.04), 1)
             .out(o0)
 
         src(o0)
