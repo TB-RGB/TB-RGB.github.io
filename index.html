@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Tristan's Resume</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="build.css" />
     <script src="https://unpkg.com/hydra-synth"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,13 @@
     <div class="card bg-base-100 shadow-xl p-1 mx-3 mb-3">
         <div class="card-body">
             <canvas id="myCanvas2" class="w-full h-80"></canvas>
-            <div class="card bg-black shadow-xl w-1/2 mx-auto my-2 p-2">
+            <div class="card bg-black shadow-xl w-1/2 mx-auto mt-1 p-2">
                 <h1 class="text-4xl">Tristan Bridges</h1>
                 <p>Phone: (913)961-4939 | Email: tbridges024@gmail.com | Github: github.com/TB-RGB</p>
             </div>
-            <div class="divider divider-primary"></div>
-            <p>As a Full-Stack Developer with a creative coding background, I bring technical skills and innovative
+            <div class="divider divider-accent"></div>
+            <p class="text-lg">As a Full-Stack Developer with a creative coding background, I bring technical skills and
+                innovative
                 problem-solving to a team. My experience with React, JavaScript, and Node.js has enabled me to build
                 dynamic
                 web applications and RESTful APIs. From my background in research, I offer a distinctive perspective on
@@ -49,7 +50,7 @@
                     <div class="card-body text-center items-center">
                         <h5 class="card-title">Solo Project: Showcase (1 week scope/2 week sprint)</h5>
                         <ul class="list-disc list-inside">
-                            <li>Developed and deployed a full-stack web application for music venues, implementing user
+                            <li>Developed and deployed a full-stack web application allowing music venues to share show data, implementing user
                                 authentication,
                                 data visualization, and file upload functionality.</li>
                             <li>Utilized React, TailwindCSS, Redux, and Axios to create a responsive front-end interface
@@ -86,93 +87,142 @@
         </div>
     </div>
 
+    <div class="divider divider-error"></div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl p-1 mx-3 mb-3">
+            <div class="card-body text-center items-center">
+                <h4 class="card-title">St. Paul Bagelry & The Groveland Tap</h4>
+                <h6 class="text-lg font-semibold">Lead Closer & Expo</h6>
+                <h5 class="text-sm">Oct 2022 - March 2024</h5>
+                <ul class="list-disc list-inside">
+                    <li>Continued learning of team leadership and collaboration</li>
+                    <li>Developed a healthy understanding of work ethic and work/life balance</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="job-list-1">
-        <h4>St. Paul Bagelry & The Groveland Tap</h4>
-        <h5>Oct 2022 - Present</h5>
-        <h6>Lead Closer & Expo</h6>
-
-
-        <p>Continued learning of team leadership and collaboration</p>
-        <p>Developed a healthy understanding of work ethic and work/life balance</p>
-
+        <div class="card bg-base-100 shadow-xl p-1 mx-3 mb-3">
+            <div class="card-body text-center items-center">
+                <h4 class="card-title">Yeo Lab</h4>
+                <h6 class="text-lg font-semibold">Research & Lab Assistant</h6>
+                <h5 class="text-sm">Oct 2018 - November 2021</h5>
+                <ul class="list-disc list-inside">
+                    <li>Assisted in the development of a cortical organoid model of myotonic dystrophy</li>
+                    <li>Instilled strong passion for and enjoyment of collaborative workspaces</li>
+                    <li>Developed strong habits of time management and organization</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="job-list-2">
-        <h4>Yeo Lab</h4>
-        <h5>Oct 2018 - November 2021</h5>
-        <h6>Research & Lab Assistant</h6>
-
-        <p>Assisted in the development of a cortical organoid model of myotonic dystrophy</p>
-        <p>Instilled strong passion for and enjoyment of collaborative workspaces</p>
-        <p>Developed strong habits of time management and organization</p>
-    </div>
-
 
     <div class="edu-head">
-        <h3>Education</h3>
+        <h3 class="text-2xl font-bold ">Education</h3>
     </div>
 
-    <div class="edu-list">
-        <h3>Prime Digital Academy</h3>
-        <h4>Full Stack Software Engineering Certification</h4>
-        <p>August 2024</p>
-        <h5>Training:</h5>
-        <ul>
-            <p>Javascript-focused Full Stack Development</p>
-            <p>Group collaboration using Agile methods and Git version control</p>
-            <p>Test-driven development</p>
-            <p>Public Speaking and Presentation experience</p>
-            <p>Real-World Client work</p>
-        </ul>
-        <p>An immersive, intensive program that combined technical learning with practical application. Allowed hands-on
-            training with agile workflows and real-world client interactions. Simultaneously it increased my technical
-            skills and sharpened my critical thinking, problem-solving, and effective communication skills necessary in
-            software engineering.</p>
-    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow-xl p-1 mx-3 my-3">
+            <div class="card-body text-center items-center">
+                <h3 class="card-title">Prime Digital Academy</h3>
+                <h4 class="text-lg font-semibold">Full Stack Software Engineering Certification</h4>
+                <p>March 2024 - August 2024</p>
+                <h5 class="font-semibold mt-2">Training:</h5>
+                <ul class="list-disc list-inside">
+                    <li>Javascript-focused Full Stack Development</li>
+                    <li>Group collaboration using Agile methods and Git version control</li>
+                    <li>Test-driven development</li>
+                    <li>Public Speaking and Presentation experience</li>
+                    <li>Real-World Client work</li>
+                </ul>
+                <div class="card bg-black shadow-xl p-2">
+                    <p>An immersive, intensive program that combined technical learning with practical application.
+                        Allowed hands-on
+                        training with agile workflows and real-world client interactions. Simultaneously it increased my
+                        technical
+                        skills and sharpened my critical thinking, problem-solving, and effective communication skills
+                        necessary in
+                        software engineering.</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="edu-list">
-        <h4>San Diego Community College</h4>
-        <h5>Spring 2017 - Fall 2020</h5>
-        <h6>General Biology</h6>
-
-        <p>Fostered my love for research</p>
-        <p>Helped organize and participate in study groups with other students</p>
+        <div class="card bg-base-100 shadow-xl p-1 mx-3 my-3">
+            <div class="card-body text-center items-center">
+                <h4 class="card-title">San Diego Community College</h4>
+                <h5 class="text-sm">Spring 2017 - Fall 2020</h5>
+                <h6 class="text-lg font-semibold">General Biology</h6>
+                <ul class="list-disc list-inside">
+                    <li>Fostered my love for research</li>
+                    <li>Helped organize and participate in study groups with other students</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="ac-head">
-        <h3>Accolades</h3>
+        <h3 class="text-2xl font-bold ">Accolades</h3>
     </div>
 
-    <div>
-        <ul>
-            <p>IRACDA SURF Summer 2018 Fellowship Recipient</p>
-            <p>Awarded Travel Scholarship and Presentation at SACNAS 2018</p>
-            <p>Cited author on Kathryn H. Morelli et al. ,MECP2-related pathways are dysregulated in a cortical
-                organoid model of myotonic dystrophy.Sci. Transl. Med.14,eabn2375(2022).DOI:<a
-                    href="https://doi.org/10.1126/scitranslmed.abn2375">10.1126/scitranslmed.abn2375</a> </p>
-        </ul>
+    <div class="card bg-base-100 shadow-xl p-1 mx-3 my-3">
+        <div class="card-body text-center items-center">
+            <ul class="list-disc list-inside">
+                <li>IRACDA SURF Summer 2018 Fellowship Recipient</li>
+                <li>Awarded Travel Scholarship and Presentation at SACNAS 2018</li>
+                <li>Cited author on Kathryn H. Morelli et al. ,MECP2-related pathways are dysregulated in a cortical
+                    organoid model of myotonic dystrophy.Sci. Transl. Med.14,eabn2375(2022).DOI:<a
+                        class="btn btn-sm btn-primary ml-2"
+                        href="https://doi.org/10.1126/scitranslmed.abn2375">10.1126/scitranslmed.abn2375</a> </li>
+            </ul>
+        </div>
     </div>
 
     <div class="hob-head">
-        <h3>Hobbies & Interest</h3>
+        <h3 class="text-2xl font-bold ">Hobbies & Interest</h3>
     </div>
 
-    <div class="hob-list">
-        <h1>Making artwork via hydra-synth.js</h1>
-        <canvas id="myCanvas" width="1000px" height="400px"></canvas>
-        <h2>ctrl+F5 to see a different output!</h2>
-        <iframe src="https://miscible.vercel.app/" style="border: none; margin: auto;" width="1000px"
-            height="400px"></iframe>
+    <div class="card bg-base-100 shadow-xl p-1 mx-3 my-3">
+        <div class="card-body text-center items-center">
+            <h1 class="card-title">hydra-synth.js</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card bg-black shadow-xl p-2">
+                    <canvas id="myCanvas" width="1000px" height="400px"></canvas>
+                </div>
+                <div class="card bg-black shadow-xl p-2">
+                    <h2><button id="btn" class="btn btn-sm mb-1 btn-secondary">Refresh</button> to see a different output!</h2>
+                    <iframe id="misc" src="https://miscible.vercel.app/" style="border: none; margin: auto;" width="1000px"
+                        height="400px"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="p5-list">
-        <h3>P5.js</h3>
-        <iframe src="https://mutually-assured-generation.vercel.app" width="1000px" height="400px"></iframe>
-        <h4>Click !vibe to start the animation, gn to pause, pull rug to reset and randomize</h4>
-        <h5>press right-click to save yourself a png of the output</h5>
-        <iframe src="https://erosionv2.vercel.app" width="1000px" height="800px"></iframe>
+    <div class="divider divider-secondary"></div>
+
+    <div class="card bg-base-100 shadow-xl p-1 mx-3 my-3">
+        <div class="card-body text-center items-center">
+            <h3 class="card-title">P5.js</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card bg-black shadow-xl p-2">
+                    <div class="card bg-base-100 shadow-xl p-2 mx-3 my-3">
+                        <iframe src="https://mutually-assured-generation.vercel.app" width="1000px"
+                            height="400px"></iframe>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl p-2 mx-3 my-3">
+                        <h1>Move the mouse to see the flow field, up/down & left/right have different effects</h1>
+                        <iframe src="https://neo-radar.vercel.app" width="1000px" height="400px"></iframe>
+                    </div>
+                </div>
+                <div class="card bg-black shadow-xl p-2">
+                    <div class="card-body text-center items-center">
+                    <h4>Click !vibe to start the animation, gn to pause, pull rug to reset and randomize</h4>
+                    <h5>press right-click to save yourself a png of the output</h5>
+                    <iframe src="https://erosionv2.vercel.app" width="1000px" height="800px"></iframe>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 
@@ -218,6 +268,13 @@
 
 
         render(o0)
+    </script>
+
+    <script>
+        function refresh() {
+            document.getElementById("misc").src += '';
+        }
+        btn.onclick = refresh;
     </script>
 </body>
 
